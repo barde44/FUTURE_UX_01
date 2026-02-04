@@ -19,7 +19,7 @@ export function Header() {
               <Heart className="h-6 w-6 text-white fill-white" />
             </div>
             <span className="font-bold text-xl text-foreground" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Clinique Santé Plus
+              Health Plus Clinic
             </span>
           </Link>
 
@@ -31,7 +31,7 @@ export function Header() {
                 isActive('/') ? 'text-primary font-medium' : 'text-foreground'
               }`}
             >
-              Accueil
+              Home
             </Link>
             <Link
               to="/services"
@@ -55,7 +55,7 @@ export function Header() {
           <div className="hidden md:block">
             <Link to="/contact">
               <Button className="bg-primary hover:bg-primary/90 text-white rounded-full px-6">
-                Prendre rendez-vous
+                Make an appointment
               </Button>
             </Link>
           </div>
@@ -86,7 +86,7 @@ export function Header() {
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Accueil
+              Home
             </Link>
             <Link
               to="/services"
@@ -108,7 +108,7 @@ export function Header() {
             </Link>
             <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
               <Button className="w-full bg-primary hover:bg-primary/90 text-white rounded-full">
-                Prendre rendez-vous
+                Make an appointment
               </Button>
             </Link>
           </nav>

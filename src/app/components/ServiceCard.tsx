@@ -40,7 +40,7 @@ export function ServiceCard({ title, description, icon: Icon, imageUrl, showButt
               variant="outline" 
               className="w-full border-primary text-primary hover:bg-primary hover:text-white rounded-full"
             >
-              Prendre rendez-vous
+              Make an appointment
             </Button>
           </Link>
         )}

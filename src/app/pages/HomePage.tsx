@@ -22,14 +22,11 @@ export function HomePage() {
             {/* Text */}
             <div className="space-y-6">
               <h1 className="max-w-xl text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight font-[Poppins]">
-                Des soins médicaux de qualité, près de chez
-                vous.
+                Quality medical care, close to home.
               </h1>
 
               <p className="max-w-xl text-lg md:text-xl text-gray-600">
-                Consultations médicales rapides et fiables avec
-                des professionnels de santé qualifiés. Prenez
-                rendez-vous facilement.
+                Quick and reliable medical consultations with qualified healthcare professionals. Easily make an appointment.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -38,7 +35,7 @@ export function HomePage() {
                     size="lg"
                     className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 text-lg w-full sm:w-auto"
                   >
-                    Prendre rendez-vous
+                    Make an appointment
                   </Button>
                 </Link>
 
@@ -48,7 +45,7 @@ export function HomePage() {
                     variant="outline"
                     className="border-primary text-primary hover:bg-primary hover:text-white rounded-full px-8 text-lg w-full sm:w-auto flex items-center gap-2"
                   >
-                    Nos services{" "}
+                    Our services{" "}
                     <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
@@ -61,7 +58,7 @@ export function HomePage() {
                 <img
                   loading="eager"
                   src="https://images.unsplash.com/photo-1581056771107-24ca5f033842"
-                  alt="Professionnel de santé"
+                  alt="Healthcare professional"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent" />
@@ -78,7 +75,7 @@ export function HomePage() {
                       15+
                     </p>
                     <p className="text-sm text-gray-600">
-                      Années d'expérience
+                      Years of experience
                     </p>
                   </div>
                 </div>
@@ -93,35 +90,34 @@ export function HomePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-[Poppins] mb-4">
-              Nos Services
+              Our services
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Une gamme complète de services médicaux pour
-              répondre à tous vos besoins de santé
+              A full range of medical services to meet all your health needs
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Link to="/services">
               <ServiceCard
-                title="Consultation générale"
-                description="Consultations médicales complètes pour tous types de problèmes de santé."
+                title="General consultation"
+                description="Comprehensive medical consultations for all types of health problems."
                 icon={Stethoscope}
               />
             </Link>
 
             <Link to="/services">
               <ServiceCard
-                title="Analyses médicales"
-                description="Analyses fiables et rapides grâce à un laboratoire moderne."
+                title="Medical tests"
+                description="Reliable and fast analyses thanks to a modern laboratory."
                 icon={FlaskConical}
               />
             </Link>
 
             <Link to="/services">
               <ServiceCard
-                title="Suivi médical"
-                description="Accompagnement personnalisé pour votre bien-être à long terme."
+                title="Medical follow-up"
+                description="Personalized support for your long-term well-being."
                 icon={ClipboardCheck}
               />
             </Link>
@@ -134,7 +130,7 @@ export function HomePage() {
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-white rounded-full px-8"
               >
-                Voir tous les services
+                See all services
               </Button>
             </Link>
           </div>
@@ -149,30 +145,30 @@ export function HomePage() {
               <img
                 loading="lazy"
                 src="https://images.unsplash.com/photo-1762625570087-6d98fca29531"
-                alt="Intérieur clinique moderne"
+                alt="Modern clinical interior"
                 className="w-full h-full object-cover"
               />
             </div>
 
             <div className="space-y-8">
               <h2 className="text-3xl md:text-4xl font-bold font-[Poppins]">
-                Pourquoi choisir Clinique Santé Plus ?
+                Why choose Health Plus Clinic?
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
                   {
                     icon: Award,
-                    title: "Professionnels certifiés",
+                    title: "Certified professionals",
                   },
                   {
                     icon: Clock,
-                    title: "Disponibilité rapide",
+                    title: "Quick availability",
                   },
-                  { icon: Users, title: "Soins personnalisés" },
+                  { icon: Users, title: "Personalized care" },
                   {
                     icon: Award,
-                    title: "Équipements modernes",
+                    title: "Modern equipment",
                   },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
@@ -194,7 +190,7 @@ export function HomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-center text-3xl md:text-4xl font-bold font-[Poppins] mb-12">
-            Ce que disent nos patients
+            What our patients say
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -209,8 +205,7 @@ export function HomePage() {
               >
                 <Quote className="h-8 w-8 text-primary/20 mb-4" />
                 <p className="italic text-gray-700 mb-4">
-                  “Excellent service, très professionnel et
-                  rassurant.”
+                  “Excellent service, very professional and reassuring.”
                 </p>
                 <p className="font-semibold font-[Poppins]">
                   {name}
@@ -224,15 +219,14 @@ export function HomePage() {
       {/* ================= CTA ================= */}
       <section className="py-20 bg-gradient-to-br from-primary to-primary/80 text-white text-center">
         <h2 className="text-3xl md:text-4xl font-bold font-[Poppins] mb-4">
-          Prêt à prendre soin de votre santé ?
+          Ready to take care of your health?
         </h2>
         <p className="text-lg mb-8 opacity-90">
-          Prenez rendez-vous dès aujourd’hui avec nos
-          spécialistes.
+          Make an appointment with our specialists today.
         </p>
         <Link to="/contact">
           <Button className="bg-white text-primary hover:bg-gray-100 rounded-full px-8 text-lg">
-            Prendre rendez-vous maintenant
+            Make an appointment now
           </Button>
         </Link>
       </section>

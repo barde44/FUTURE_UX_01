@@ -13,11 +13,11 @@ export function Footer() {
                 <Heart className="h-6 w-6 text-white fill-white" />
               </div>
               <span className="font-bold text-xl" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                Clinique Santé Plus
+                Health Plus Clinic
               </span>
             </div>
             <p className="text-gray-400">
-              Des soins médicaux de qualité, près de chez vous. Votre santé est notre priorité.
+              Quality medical care, close to you. Your health is our priority.
             </p>
           </div>
 
@@ -30,20 +30,20 @@ export function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                 <p className="text-gray-400">
-                  123 Rue de la Santé<br />
-                  75013 Paris, France
+                  123 Health Street<br />
+                  75013 Lomé, Togo
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                <a href="tel:+33123456789" className="text-gray-400 hover:text-white transition-colors">
-                  +33 1 23 45 67 89
+                <a href="tel:+228123456789" className="text-gray-400 hover:text-white transition-colors">
+                  +228 1 23 45 67 89
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-primary flex-shrink-0" />
                 <a href="mailto:contact@santeplus.fr" className="text-gray-400 hover:text-white transition-colors">
-                  contact@santeplus.fr
+                  contact@santeplus.tg
                 </a>
               </div>
             </div>
@@ -52,11 +52,11 @@ export function Footer() {
           {/* Quick Links */}
           <div>
             <h3 className="font-semibold mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Liens rapides
+              Quick Links
             </h3>
             <nav className="space-y-2">
               <Link to="/" className="block text-gray-400 hover:text-white transition-colors">
-                Accueil
+                Home
               </Link>
               <Link to="/services" className="block text-gray-400 hover:text-white transition-colors">
                 Services
@@ -70,7 +70,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Clinique Santé Plus. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} Health Plus Clinic. All rights reserved.</p>
         </div>
       </div>
     </footer>

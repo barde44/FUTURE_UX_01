@@ -14,51 +14,51 @@ import {
 export function ServicesPage() {
   const services = [
     {
-      title: 'Consultation générale',
-      description: 'Consultations médicales complètes pour tous types de problèmes de santé. Nos médecins généralistes expérimentés vous accueillent pour un diagnostic précis et des conseils adaptés à votre situation.',
+      title: 'General Consultation',
+      description: 'Comprehensive medical consultations for all types of health concerns. Our experienced general practitioners provide accurate diagnoses and personalized medical advice tailored to your situation.',
       icon: Stethoscope,
       imageUrl: 'https://images.unsplash.com/photo-1758691461935-202e2ef6b69f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwY29uc3VsdGF0aW9uJTIwcGF0aWVudCUyMGRvY3RvcnxlbnwxfHx8fDE3NzAxNDE1NTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     },
     {
-      title: 'Analyses médicales',
-      description: 'Notre laboratoire moderne est équipé des dernières technologies pour effectuer tous types d\'analyses sanguines, urinaires et biologiques. Résultats rapides et fiables pour un diagnostic précis.',
+      title: 'Medical Tests & Analysis',
+      description: 'Our modern laboratory is equipped with the latest technologies to perform all types of blood, urine, and biological tests. Fast and reliable results for accurate diagnosis.',
       icon: FlaskConical,
       imageUrl: 'https://images.unsplash.com/photo-1768498950658-87ecfe232b59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwbGFib3JhdG9yeSUyMGFuYWx5c2lzfGVufDF8fHx8MTc3MDE0MTU1NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     },
     {
-      title: 'Suivi médical',
-      description: 'Suivi personnalisé et accompagnement continu pour la gestion de vos conditions chroniques. Programme de suivi adapté à vos besoins avec des consultations régulières pour optimiser votre bien-être.',
+      title: 'Medical Follow-up',
+      description: 'Personalized follow-up and continuous support for managing chronic conditions. Tailored monitoring programs with regular consultations to optimize your well-being.',
       icon: ClipboardCheck,
       imageUrl: 'https://images.unsplash.com/photo-1739285452629-2672b13fa42d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwaGVhbHRoJTIwY2hlY2t1cHxlbnwxfHx8fDE3NzAxNDE1NTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     },
     {
-      title: 'Cardiologie',
-      description: 'Consultations spécialisées en cardiologie avec électrocardiogramme (ECG) et tests de dépistage cardiovasculaire. Prenez soin de votre cœur avec nos experts.',
+      title: 'Cardiology',
+      description: 'Specialized cardiology consultations including electrocardiograms (ECG) and cardiovascular screening tests. Take care of your heart with our experts.',
       icon: Heart,
     },
     {
-      title: 'Pédiatrie',
-      description: 'Soins médicaux spécialisés pour les nourrissons, enfants et adolescents. Notre équipe pédiatrique assure un suivi attentif de la croissance et du développement de vos enfants.',
+      title: 'Pediatrics',
+      description: 'Specialized medical care for infants, children, and adolescents. Our pediatric team ensures attentive monitoring of your child’s growth and development.',
       icon: Baby,
     },
     {
       title: 'Vaccinations',
-      description: 'Service complet de vaccination pour tous les âges. Suivez votre calendrier vaccinal et protégez-vous contre les maladies évitables par la vaccination.',
+      description: 'Comprehensive vaccination services for all ages. Stay up to date with your vaccination schedule and protect yourself against preventable diseases.',
       icon: Syringe,
     },
     {
-      title: 'Médecine préventive',
-      description: 'Bilans de santé complets et dépistages préventifs pour détecter précocement les problèmes de santé. Prévenir vaut mieux que guérir.',
+      title: 'Preventive Medicine',
+      description: 'Comprehensive health check-ups and preventive screenings to detect potential health issues early. Prevention is better than cure.',
       icon: UserCheck,
     },
     {
-      title: 'Médecine du sport',
-      description: 'Consultations et examens pour les sportifs. Certificats médicaux, conseils nutritionnels et suivi de performance pour optimiser votre pratique sportive.',
+      title: 'Sports Medicine',
+      description: 'Consultations and medical examinations for athletes. Medical certificates, nutritional advice, and performance monitoring to optimize your athletic practice.',
       icon: ActivitySquare,
     },
     {
-      title: 'Prescriptions et renouvellements',
-      description: 'Renouvellement d\'ordonnances pour traitements chroniques et prescriptions médicales après consultation. Service rapide et efficace.',
+      title: 'Prescriptions & Renewals',
+      description: 'Prescription renewals for chronic treatments and medical prescriptions following consultation. Fast and efficient service.',
       icon: Pill,
     },
   ];
@@ -73,11 +73,11 @@ export function ServicesPage() {
               className="text-4xl md:text-5xl font-bold text-foreground mb-4"
               style={{ fontFamily: 'Poppins, sans-serif' }}
             >
-              Nos Services Médicaux
+              Our Medical Services
             </h1>
             <p className="text-lg md:text-xl text-gray-600">
-              Une gamme complète de services de santé pour répondre à tous vos besoins médicaux. 
-              Des soins de qualité dispensés par des professionnels qualifiés.
+              A comprehensive range of healthcare services to meet all your medical needs.
+              Quality care delivered by qualified professionals.
             </p>
           </div>
         </div>
@@ -109,7 +109,7 @@ export function ServicesPage() {
               className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-center"
               style={{ fontFamily: 'Poppins, sans-serif' }}
             >
-              Comment prendre rendez-vous ?
+              How to Book an Appointment?
             </h2>
             <div className="space-y-4 text-gray-600">
               <p className="flex items-start gap-3">
@@ -117,7 +117,7 @@ export function ServicesPage() {
                   1
                 </span>
                 <span>
-                  Remplissez le formulaire de contact en ligne ou appelez-nous directement au <strong>+33 1 23 45 67 89</strong>
+                  Fill out the online contact form or call us directly at <strong>+33 1 23 45 67 89</strong>
                 </span>
               </p>
               <p className="flex items-start gap-3">
@@ -125,7 +125,7 @@ export function ServicesPage() {
                   2
                 </span>
                 <span>
-                  Notre équipe vous contactera pour confirmer votre rendez-vous et répondre à vos questions
+                  Our team will contact you to confirm your appointment and answer any questions
                 </span>
               </p>
               <p className="flex items-start gap-3">
@@ -133,7 +133,7 @@ export function ServicesPage() {
                   3
                 </span>
                 <span>
-                  Présentez-vous à la clinique à l'heure convenue avec vos documents médicaux et votre carte Vitale
+                  Visit the clinic at the scheduled time with your medical documents and health insurance card
                 </span>
               </p>
             </div>

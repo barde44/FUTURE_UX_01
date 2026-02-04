@@ -43,10 +43,10 @@ export function ContactPage() {
               className="text-4xl md:text-5xl font-bold text-foreground mb-4"
               style={{ fontFamily: 'Poppins, sans-serif' }}
             >
-              Prendre rendez-vous
+              Book an Appointment
             </h1>
             <p className="text-lg md:text-xl text-gray-600">
-              Remplissez le formulaire ci-dessous et notre équipe vous contactera rapidement pour confirmer votre rendez-vous
+              Fill out the form below and our team will contact you shortly to confirm your appointment
             </p>
           </div>
         </div>
@@ -62,7 +62,7 @@ export function ContactPage() {
                 className="text-2xl md:text-3xl font-bold text-foreground mb-6"
                 style={{ fontFamily: 'Poppins, sans-serif' }}
               >
-                Formulaire de rendez-vous
+                Appointment Request Form
               </h2>
               
               {submitted ? (
@@ -83,16 +83,16 @@ export function ContactPage() {
                     </svg>
                   </div>
                   <h3 className="font-semibold text-lg mb-2" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                    Demande envoyée avec succès !
+                    Request Sent Successfully!
                   </h3>
                   <p className="text-gray-600">
-                    Nous vous contactons dans les plus brefs délais pour confirmer votre rendez-vous.
+                    We will contact you shortly to confirm your appointment.
                   </p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Nom complet *</Label>
+                    <Label htmlFor="name">Full Name *</Label>
                     <Input
                       id="name"
                       name="name"
@@ -101,12 +101,12 @@ export function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       className="rounded-lg bg-input-background"
-                      placeholder="Jean Dupont"
+                      placeholder="John Doe"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Téléphone *</Label>
+                    <Label htmlFor="phone">Phone Number *</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -115,7 +115,7 @@ export function ContactPage() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="rounded-lg bg-input-background"
-                      placeholder="+33 6 12 34 56 78"
+                      placeholder="+228 6 12 34 56 78"
                     />
                   </div>
 
@@ -129,12 +129,12 @@ export function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       className="rounded-lg bg-input-background"
-                      placeholder="jean.dupont@email.com"
+                      placeholder="john.doe@email.com"
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message / Motif de consultation *</Label>
+                    <Label htmlFor="message">Message / Reason for Consultation *</Label>
                     <Textarea
                       id="message"
                       name="message"
@@ -142,7 +142,7 @@ export function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       className="rounded-lg bg-input-background min-h-32"
-                      placeholder="Décrivez brièvement le motif de votre consultation..."
+                      placeholder="Briefly describe the reason for your consultation..."
                     />
                   </div>
 
@@ -151,7 +151,7 @@ export function ContactPage() {
                     size="lg"
                     className="w-full bg-primary hover:bg-primary/90 text-white rounded-full"
                   >
-                    Envoyer ma demande
+                    Submit My Request
                   </Button>
                 </form>
               )}
@@ -174,7 +174,7 @@ export function ContactPage() {
                   className="text-xl font-bold text-foreground mb-4"
                   style={{ fontFamily: 'Poppins, sans-serif' }}
                 >
-                  Autres moyens de nous contacter
+                  Other Ways to Contact Us
                 </h3>
 
                 <div className="flex items-start gap-4">
@@ -183,13 +183,13 @@ export function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold mb-1" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                      Téléphone
+                      Phone
                     </p>
                     <a 
                       href="tel:+33123456789" 
                       className="text-gray-600 hover:text-primary transition-colors"
                     >
-                      +33 1 23 45 67 89
+                      +228 1 23 45 67 89
                     </a>
                   </div>
                 </div>
@@ -206,7 +206,7 @@ export function ContactPage() {
                       href="mailto:contact@santeplus.fr" 
                       className="text-gray-600 hover:text-primary transition-colors"
                     >
-                      contact@santeplus.fr
+                      contact@santeplus.tg
                     </a>
                   </div>
                 </div>
@@ -217,11 +217,11 @@ export function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold mb-1" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                      Adresse
+                      Address
                     </p>
                     <p className="text-gray-600">
-                      123 Rue de la Santé<br />
-                      75013 Paris, France
+                      123 Health Street<br />
+                      75013 Lomé, Togo
                     </p>
                   </div>
                 </div>
@@ -232,12 +232,12 @@ export function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold mb-1" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                      Horaires d'ouverture
+                      Opening Hours
                     </p>
                     <div className="text-gray-600 space-y-1">
-                      <p>Lundi - Vendredi : 8h00 - 19h00</p>
-                      <p>Samedi : 9h00 - 13h00</p>
-                      <p>Dimanche : Fermé</p>
+                      <p>Monday - Friday: 8:00 AM - 7:00 PM</p>
+                      <p>Saturday: 9:00 AM - 1:00 PM</p>
+                      <p>Sunday: Closed</p>
                     </div>
                   </div>
                 </div>
@@ -253,8 +253,8 @@ export function ContactPage() {
           <div className="bg-gray-200 rounded-2xl overflow-hidden shadow-lg h-96 flex items-center justify-center">
             <div className="text-center">
               <MapPin className="h-12 w-12 text-gray-400 mx-auto mb-2" />
-              <p className="text-gray-500">Carte interactive</p>
-              <p className="text-sm text-gray-400">123 Rue de la Santé, 75013 Paris</p>
+              <p className="text-gray-500">Interactive Map</p>
+              <p className="text-sm text-gray-400">123 Health Street, 75013 Lomé</p>
             </div>
           </div>
         </div>
